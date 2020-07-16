@@ -1,0 +1,8 @@
+C:\Repos\footballsimulator\FootballSimulator.Data\bin\Debug\netcoreapp3.1\FootballSimulator.Data.deps.json
+C:\Repos\footballsimulator\FootballSimulator.Data\bin\Debug\netcoreapp3.1\FootballSimulator.Data.dll
+C:\Repos\footballsimulator\FootballSimulator.Data\bin\Debug\netcoreapp3.1\FootballSimulator.Data.pdb
+C:\Repos\footballsimulator\FootballSimulator.Data\obj\Debug\netcoreapp3.1\FootballSimulator.Data.AssemblyInfoInputs.cache
+C:\Repos\footballsimulator\FootballSimulator.Data\obj\Debug\netcoreapp3.1\FootballSimulator.Data.AssemblyInfo.cs
+C:\Repos\footballsimulator\FootballSimulator.Data\obj\Debug\netcoreapp3.1\FootballSimulator.Data.csproj.CoreCompileInputs.cache
+C:\Repos\footballsimulator\FootballSimulator.Data\obj\Debug\netcoreapp3.1\FootballSimulator.Data.dll
+C:\Repos\footballsimulator\FootballSimulator.Data\obj\Debug\netcoreapp3.1\FootballSimulator.Data.pdb

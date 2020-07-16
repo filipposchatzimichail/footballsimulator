@@ -1,0 +1,12 @@
+C:\Repos\footballsimulator\FootballSimulator.API\bin\Debug\netcoreapp3.1\FootballSimulator.API.deps.json
+C:\Repos\footballsimulator\FootballSimulator.API\bin\Debug\netcoreapp3.1\FootballSimulator.API.dll
+C:\Repos\footballsimulator\FootballSimulator.API\bin\Debug\netcoreapp3.1\FootballSimulator.API.pdb
+C:\Repos\footballsimulator\FootballSimulator.API\bin\Debug\netcoreapp3.1\FootballSimulator.Data.dll
+C:\Repos\footballsimulator\FootballSimulator.API\bin\Debug\netcoreapp3.1\FootballSimulator.Data.pdb
+C:\Repos\footballsimulator\FootballSimulator.API\obj\Debug\netcoreapp3.1\FootballSimulator.API.csprojAssemblyReference.cache
+C:\Repos\footballsimulator\FootballSimulator.API\obj\Debug\netcoreapp3.1\FootballSimulator.API.AssemblyInfoInputs.cache
+C:\Repos\footballsimulator\FootballSimulator.API\obj\Debug\netcoreapp3.1\FootballSimulator.API.AssemblyInfo.cs
+C:\Repos\footballsimulator\FootballSimulator.API\obj\Debug\netcoreapp3.1\FootballSimulator.API.csproj.CoreCompileInputs.cache
+C:\Repos\footballsimulator\FootballSimulator.API\obj\Debug\netcoreapp3.1\FootballSimulator.API.csproj.CopyComplete
+C:\Repos\footballsimulator\FootballSimulator.API\obj\Debug\netcoreapp3.1\FootballSimulator.API.dll
+C:\Repos\footballsimulator\FootballSimulator.API\obj\Debug\netcoreapp3.1\FootballSimulator.API.pdb

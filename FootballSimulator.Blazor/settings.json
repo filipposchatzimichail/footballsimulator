@@ -1,0 +1,22 @@
+﻿{
+	"Teams": [
+		{
+			"name": "Italy",
+			"strength": 1
+		},
+		{
+			"name": "Spain",
+			"strength": 1
+		},
+		{
+			"name": "Portugal",
+			"strength": 2
+		},
+		{
+			"name": "Netherlands",
+			"strength": 4
+		}
+	],
+	"PsychologicalAdvantage" : 1
+}
+

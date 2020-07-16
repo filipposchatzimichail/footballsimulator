@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DcG9dNjnTZuSyllSLHG1Iv5SNWvb6lDphadiVni/Uqee9cQfI4FLRUFxW0OK7qYSZ/tNHiqC0PN6aMUpNXBqiw==",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\footballsimulator\\FootballSimulator.Blazor\\FootballSimulator.Blazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FChat\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

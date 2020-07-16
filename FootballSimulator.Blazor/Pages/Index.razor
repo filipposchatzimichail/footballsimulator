@@ -1,0 +1,128 @@
+﻿@page "/"
+
+@using Newtonsoft.Json;
+@using FootballSimulator.Data;
+@using FootballSimulator.Services;
+@using System.IO;
+@inject FootballSimulatorService SimulatorService
+
+<h1>Football Simulator</h1>
+
+<button class="btn btn-primary" @onclick="SimulateFixtures">Simulate Fixtures</button>
+@if (fixtures != null && games == null)
+{
+  <button class="btn btn-primary" @onclick="SimulateGames">Simulate Games</button>
+}
+@if (fixtures != null && games != null && summaries == null)
+{
+  <button class="btn btn-primary" @onclick="GenerateSummaries">Generate Summaries</button>
+}
+<hr>
+
+<div class="container-fluid">
+
+  @if (fixtures != null && games == null)
+  {
+
+    @foreach (var query in fixtures.GroupBy(p => p.Round))
+    {
+      <div class="row">
+        <h4><b>Round @query.Key</b></h4>
+      </div>
+
+      @foreach (var v in query)
+      {
+        <div class="row">@v</div>
+      }
+
+      <hr>
+    }
+  }
+  else if (games != null && summaries == null)
+  {
+    @foreach (var query in games.GroupBy(p => p.Fixture.Round))
+    {
+      <div class="row">
+        <h4><b>Round @query.Key</b></h4>
+      </div>
+
+      @foreach (var v in query)
+      {
+        <div class="row">@v.Fixture (@v.Result.HomeTeamScore-@v.Result.AwayTeamScore)</div>
+      }
+      <hr>
+
+    }
+  }
+  else if (summaries != null)
+  {
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Wins</th>
+          <th>Draws</th>
+          <th>Losses</th>
+          <th>Goals For</th>
+          <th>Goals Against</th>
+          <th>Total points</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (var summary in summaries)
+        {
+        <tr>
+          <td>@summary.Team</td>
+          <td>@summary.Wins</td>
+          <td>@summary.Draws</td>
+          <td>@summary.Losses</td>
+          <td>@summary.GoalsFor</td>
+          <td>@summary.GoalsAgainst</td>
+          <td>@summary.TotalPoints</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  }
+
+
+</div>
+
+
+
+
+@code {
+
+  private IEnumerable<Fixture> fixtures;
+  private IEnumerable<Game> games;
+  private IEnumerable<TeamSummary> summaries;
+
+  private void SimulateFixtures()
+  {
+    fixtures = SimulatorService.SimulateFixtures();
+    games = null;
+    summaries = null;
+  }
+
+  private void SimulateGames()
+  {
+    games = SimulatorService.SimulateGames(fixtures);
+  }
+
+  private void GenerateSummaries()
+  {
+    summaries = SimulatorService.GenerateSummaries(games);
+  }
+
+
+  private FootballSimulator.Data.SimulatorSettings settings;
+
+  protected override async Task OnInitializedAsync()
+  {
+    await Task.Run(() =>
+    {
+      settings = JsonConvert.DeserializeObject<SimulatorSettings>(File.ReadAllText("settings.json"));
+      SimulatorService.Settings = settings;
+    });
+  }
+}

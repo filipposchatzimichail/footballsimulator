@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cUiW/TSDRulObr86b/pQJPEN3aCQwSxNk+56cFf3JTU/aT+g1usXtp3kgpUSiazYIvOQJREl4U6p385dSMC7pw==",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\footballsimulator\\FootballSimulator.Services\\FootballSimulator.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FChat\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
