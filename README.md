@@ -8,21 +8,12 @@ The solution currrently uses 4 teams (Italy, Spain, Portugal and Netherlands) bu
 
 The projects in this solution include:
 
-**1. FootballSimulator.API**
-
-**2. FootballSimulator.Blazor**
-
-**3. FootballSimulator.ConsoleApp**
-
-**4. FootballSimulator.Data**
-
-**5. FootballSimulator.Services**
-
-**6. FootballSimulator.Tests**
-
-
-
-
+* FootballSimulator.API
+* FootballSimulator.Blazor
+* FootballSimulator.ConsoleApp
+* FootballSimulator.Data
+* FootballSimulator.Services
+* FootballSimulator.Tests
 
 #### Other features
 * Simulating the tournament fixtures.
